@@ -1,11 +1,30 @@
 package es.studium.practica2;
 
+/**
+ * Creacion de la clase TestBanco.
+ * Esta clase se encarga de ejecutar el programa principal.
+ * @author EVA
+ * @version 1.0
+ * @since 02/02/2023
+ */
 public class TestBanco
 {
 	
+	/**
+	 * Constante con mensaje que muestra en la consola "La cuenta de" seguido del nombre del Cliente.
+	 */
 	private static final String CUENTA_DE = "La cuenta de ";
+	
+	/**
+	 * Objeto de la clase Cuenta con los datos de la cuenta de Antonio.
+	 */
 	private static Cuenta cuentaAntonio;
 
+	
+	/**
+	 * 
+	 * @param args - Declaracion del metodo principal.
+	 */
 	public static void main(String[] args)
 	{
 		
@@ -57,6 +76,11 @@ public class TestBanco
 	}
 
 	
+	/**
+	 * 
+	 * @param cuentaBeatriz - Parametro que representa la cuenta de Beatriz.
+	 * @return Devuelve el valor del atributo saldo.
+	 */
 	public static int saldoBeatriz(Cuenta cuentaBeatriz)
 	{
 		return cuentaBeatriz.getSaldo();
